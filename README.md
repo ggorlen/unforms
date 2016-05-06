@@ -1,2 +1,2 @@
 # unforms
-Pure data patch for arrhythmic squiggles
+Pure Data patch for arrhythmic squiggles
