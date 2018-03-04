@@ -1,2 +1,2 @@
 # unforms
-Pure Data patch for arrhythmic squiggles
+Arrhythmic acid squiggles
