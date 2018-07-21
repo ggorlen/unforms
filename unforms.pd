@@ -165,7 +165,7 @@
 #X msg 81 197 1;
 #X obj 139 210 readsf~;
 #X obj 105 118 tgl 15 0 empty empty bass_drum_i/o 17 7 2 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 133 234 *~ 0.45;
 #X msg 252 185 open bassdrum1.wav;
 #X obj 48 68 inlet;
@@ -217,13 +217,13 @@
 #X msg 314 31 29;
 #X msg 188 31 31;
 #X msg 218 31 42;
-#N canvas 52 152 450 300 bd 1;
+#N canvas 52 152 450 300 bd 0;
 #X obj 81 180 t b b;
 #X obj 81 163 spigot;
 #X msg 81 197 1;
 #X obj 142 212 readsf~;
 #X obj 105 118 tgl 15 0 empty empty bass_drum_i/o 17 7 2 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X obj 133 234 *~ 0.45;
 #X obj 48 68 inlet;
 #X obj 134 260 outlet~;
@@ -286,6 +286,8 @@
 #X msg 254 137 75;
 #X msg 160 123 13;
 #X msg 807 399 open out120.wav;
+#X obj 834 486 loadbang;
+#X msg 763 515 0.09;
 #X connect 0 0 3 0;
 #X connect 0 1 3 1;
 #X connect 1 0 3 0;
@@ -490,3 +492,5 @@
 #X connect 149 0 72 0;
 #X connect 149 0 83 0;
 #X connect 150 0 3 0;
+#X connect 151 0 152 0;
+#X connect 152 0 35 0;
